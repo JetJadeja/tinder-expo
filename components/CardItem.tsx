@@ -1,5 +1,12 @@
-import React from "react";
-import { Text, View, Image, Dimensions, TouchableOpacity } from "react-native";
+import React, { useState } from "react";
+import {
+  ScrollView,
+  View,
+  Text,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import Icon from "./Icon";
 import { CardItemT } from "../types";
 import styles, {
@@ -39,6 +46,12 @@ const CardItem = ({
       fontSize: hasVariant ? 15 : 30,
     },
   ];
+
+  const scrollViewStyle = {
+    height: hasVariant ? 170 : 350, // Fixed height for ScrollView
+  };
+
+  const [activeSlide, setActiveSlide] = useState(0);
 
   return (
     <View style={styles.containerCardItem}>
