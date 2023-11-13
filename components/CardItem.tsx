@@ -55,8 +55,17 @@ const CardItem = ({
 
   return (
     <View style={styles.containerCardItem}>
-      {/* IMAGE */}
-      <Image source={images[0]} style={imageStyle} />
+      {/* IMAGE SCROLLVIEW */}
+      <ScrollView
+        style={scrollViewStyle}
+        vertical={true}
+        showsVerticalScrollIndicator={false}
+        pagingEnabled={true} // Optional: to snap to each image
+      >
+        {images.map((image, index) => (
+          <Image key={index} source={image} style={imageStyle} />
+        ))}
+      </ScrollView>
 
       {/* MATCHES */}
       {matches && (
