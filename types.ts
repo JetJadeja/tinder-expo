@@ -2,7 +2,7 @@ export type CardItemT = {
   description?: string;
   hasActions?: boolean;
   hasVariant?: boolean;
-  image: Array<object>;
+  images: Array<object>;
   isOnline?: boolean;
   matches?: string;
   name: string;

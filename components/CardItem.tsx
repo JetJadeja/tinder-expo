@@ -21,7 +21,7 @@ const CardItem = ({
   description,
   hasActions,
   hasVariant,
-  image,
+  images,
   isOnline,
   matches,
   name,
@@ -56,7 +56,7 @@ const CardItem = ({
   return (
     <View style={styles.containerCardItem}>
       {/* IMAGE */}
-      <Image source={image[0]} style={imageStyle} />
+      <Image source={images[0]} style={imageStyle} />
 
       {/* MATCHES */}
       {matches && (
