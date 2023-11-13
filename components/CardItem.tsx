@@ -43,7 +43,7 @@ const CardItem = ({
   return (
     <View style={styles.containerCardItem}>
       {/* IMAGE */}
-      <Image source={image} style={imageStyle} />
+      <Image source={image[0]} style={imageStyle} />
 
       {/* MATCHES */}
       {matches && (
