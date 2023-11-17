@@ -46,6 +46,7 @@ export type DataT = {
   description: string;
   message: string;
   image: any;
+  images: Array<Object>;
   age?: string;
   info1?: string;
   info2?: string;

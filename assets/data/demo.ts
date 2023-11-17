@@ -1,5 +1,7 @@
 import { DataT } from "../../types";
-import IMAGE_01 from "../images/01.jpg";
+
+import RICHARD_1 from "../images/01.jpg";
+
 import IMAGE_02 from "../images/02.jpg";
 import IMAGE_03 from "../images/03.jpg";
 import IMAGE_04 from "../images/04.jpg";
@@ -13,14 +15,15 @@ import IMAGE_10 from "../images/10.jpg";
 const data: DataT[] = [
   {
     id: 1,
-    name: "Leanne Graham",
+    name: "Richard Zheng",
     isOnline: true,
-    match: "78",
+    match: "96",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "16 Year Old Photographer. Full-time Traveller. Globe Trotter. Teaches kids Photography.",
     message:
       "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
-    image: IMAGE_01,
+    image: RICHARD_1,
+    images: [RICHARD_1],
   },
   {
     id: 2,
@@ -31,17 +34,19 @@ const data: DataT[] = [
     isOnline: false,
     message: "Someone like you. Someone who'll rattle the cages.",
     image: IMAGE_02,
+    images: [RICHARD_1],
   },
   {
     id: 3,
-    name: "Ervin Howell",
-    match: "45",
+    name: "Rion Doris",
+    match: "76",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Passionate about elevating performance, leadership and consciousness to accelerate innovation and build a better world.",
     isOnline: false,
     message:
       "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
     image: IMAGE_03,
+    images: [RICHARD_1],
   },
   {
     id: 4,
@@ -52,6 +57,7 @@ const data: DataT[] = [
     isOnline: true,
     message: "Bats frighten me. It's time my enemies shared my dread.",
     image: IMAGE_04,
+    images: [RICHARD_1],
   },
   {
     id: 5,
@@ -62,6 +68,7 @@ const data: DataT[] = [
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
+    images: [RICHARD_1],
   },
   {
     id: 6,
@@ -73,6 +80,7 @@ const data: DataT[] = [
     message:
       "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
     image: IMAGE_06,
+    images: [RICHARD_1],
   },
   {
     id: 7,
@@ -84,6 +92,7 @@ const data: DataT[] = [
     message:
       "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
     image: IMAGE_07,
+    images: [RICHARD_1],
   },
   {
     id: 8,
@@ -101,6 +110,7 @@ const data: DataT[] = [
     message:
       "And as for the television's so-called plan, Batman has no jurisdiction.",
     image: IMAGE_08,
+    images: [RICHARD_1],
   },
   {
     id: 9,
@@ -112,6 +122,7 @@ const data: DataT[] = [
     message:
       "This is what happens when an unstoppable force meets an immovable object.",
     image: IMAGE_09,
+    images: [RICHARD_1],
   },
   {
     id: 10,
@@ -123,6 +134,7 @@ const data: DataT[] = [
     message:
       "You want order in Gotham. Batman must take off his mask and turn himself in.",
     image: IMAGE_10,
+    images: [RICHARD_1],
   },
 ];
 

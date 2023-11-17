@@ -28,7 +28,7 @@ const App = () => (
                 paddingTop: 10,
               },
               style: {
-                backgroundColor: WHITE,
+                backgroundColor: BLACK,
                 borderTopWidth: 0,
                 marginBottom: 0,
                 shadowOpacity: 0.05,

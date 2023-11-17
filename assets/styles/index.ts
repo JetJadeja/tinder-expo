@@ -6,13 +6,16 @@ export const WHITE = "#FFFFFF";
 export const GRAY = "#757E90";
 export const DARK_GRAY = "#363636";
 export const BLACK = "#000000";
+export const DARK_BACKGROUND = "#121212";
+export const LIGHT_GRAY = "#B3B3B3";
+export const DARKER_GRAY = "#1C1C1E";
 
 export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
 
 export const STAR_ACTIONS = "#FFA200";
 export const LIKE_ACTIONS = "#B644B2";
-export const DISLIKE_ACTIONS = "#363636";
+export const DISLIKE_ACTIONS = "#A1A1A1";
 export const FLASH_ACTIONS = "#5028D7";
 
 export const DIMENSION_WIDTH = Dimensions.get("window").width;
@@ -21,7 +24,7 @@ export const DIMENSION_HEIGHT = Dimensions.get("window").height;
 export default StyleSheet.create({
   // COMPONENT - CARD ITEM
   containerCardItem: {
-    backgroundColor: WHITE,
+    backgroundColor: DARK_BACKGROUND,
     borderRadius: 8,
     alignItems: "center",
     margin: 10,
@@ -42,8 +45,9 @@ export default StyleSheet.create({
     color: WHITE,
   },
   descriptionCardItem: {
-    color: GRAY,
+    color: WHITE,
     textAlign: "center",
+    paddingHorizontal: 10,
   },
   status: {
     paddingBottom: 10,
@@ -51,7 +55,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   statusText: {
-    color: GRAY,
+    color: WHITE,
     fontSize: 12,
   },
   online: {
@@ -72,13 +76,15 @@ export default StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: 30,
+    justifyContent: "space-between", // This line will distribute space between items
+    expand: true,
   },
   button: {
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: WHITE,
-    marginHorizontal: 7,
+    backgroundColor: BLACK,
+    marginHorizontal: 35,
     alignItems: "center",
     justifyContent: "center",
     elevation: 1,
@@ -86,12 +92,14 @@ export default StyleSheet.create({
     shadowRadius: 20,
     shadowColor: DARK_GRAY,
     shadowOffset: { height: 10, width: 0 },
+    borderWidth: 2, // Add this line for border width
+    borderColor: "white", // Add this line for border color
   },
   miniButton: {
     width: 40,
     height: 40,
     borderRadius: 30,
-    backgroundColor: WHITE,
+    backgroundColor: BLACK,
     marginHorizontal: 7,
     alignItems: "center",
     justifyContent: "center",
@@ -104,10 +112,10 @@ export default StyleSheet.create({
 
   // COMPONENT - CITY
   city: {
-    backgroundColor: WHITE,
+    backgroundColor: BLACK,
     padding: 10,
     borderRadius: 20,
-    width: 100,
+    width: 130,
     elevation: 1,
     shadowOpacity: 0.05,
     shadowRadius: 10,
@@ -115,14 +123,14 @@ export default StyleSheet.create({
     shadowOffset: { height: 0, width: 0 },
   },
   cityText: {
-    color: DARK_GRAY,
+    color: WHITE,
     fontSize: 13,
     textAlign: "center",
   },
 
   // COMPONENT - FILTERS
   filters: {
-    backgroundColor: WHITE,
+    backgroundColor: BLACK,
     padding: 10,
     borderRadius: 20,
     width: 90,
@@ -133,7 +141,7 @@ export default StyleSheet.create({
     shadowOffset: { height: 0, width: 0 },
   },
   filtersText: {
-    color: DARK_GRAY,
+    color: WHITE,
     fontSize: 13,
     textAlign: "center",
   },
@@ -190,12 +198,12 @@ export default StyleSheet.create({
   name: {
     paddingTop: 25,
     paddingBottom: 5,
-    color: DARK_GRAY,
+    color: WHITE,
     fontSize: 15,
     textAlign: "center",
   },
   descriptionProfileItem: {
-    color: GRAY,
+    color: WHITE,
     textAlign: "center",
     paddingBottom: 20,
     fontSize: 13,
@@ -221,6 +229,7 @@ export default StyleSheet.create({
     resizeMode: "cover",
     width: DIMENSION_WIDTH,
     height: DIMENSION_HEIGHT,
+    backgroundColor: DARKER_GRAY,
   },
   top: {
     paddingTop: 50,

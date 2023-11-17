@@ -9,10 +9,7 @@ const Home = () => {
   const [swiper, setSwiper] = useState<CardStack | null>(null);
 
   return (
-    <ImageBackground
-      source={require("../assets/images/bg.png")}
-      style={styles.bg}
-    >
+    <View style={styles.bg}>
       <View style={styles.containerHome}>
         <View style={styles.top}>
           <City />
@@ -29,7 +26,7 @@ const Home = () => {
             <Card key={item.id}>
               <CardItem
                 hasActions
-                images={[item.image, item.image]}
+                images={item.images}
                 name={item.name}
                 description={item.description}
                 matches={item.match}
@@ -38,7 +35,7 @@ const Home = () => {
           ))}
         </CardStack>
       </View>
-    </ImageBackground>
+    </View>
   );
 };
 

@@ -32,23 +32,23 @@ const CardItem = ({
   const imageStyle = [
     {
       borderRadius: 8,
-      width: hasVariant ? fullWidth / 2 - 30 : fullWidth - 80,
-      height: hasVariant ? 170 : 350,
-      margin: hasVariant ? 0 : 20,
+      width: fullWidth - 80,
+      height: 350,
+      margin: 20,
     },
   ];
 
   const nameStyle = [
     {
-      paddingTop: hasVariant ? 10 : 15,
-      paddingBottom: hasVariant ? 5 : 7,
-      color: "#363636",
-      fontSize: hasVariant ? 15 : 30,
+      paddingTop: 15,
+      paddingBottom: 7,
+      color: WHITE,
+      fontSize: 30,
     },
   ];
 
   const scrollViewStyle = {
-    height: hasVariant ? 170 : 350, // Fixed height for ScrollView
+    height: 400, // Fixed height for ScrollView
   };
 
   const [activeSlide, setActiveSlide] = useState(0);
@@ -60,10 +60,15 @@ const CardItem = ({
         style={scrollViewStyle}
         vertical={true}
         showsVerticalScrollIndicator={false}
-        pagingEnabled={true} // Optional: to snap to each image
+        pagingEnabled={true} // This should snap to each image
       >
         {images.map((image, index) => (
-          <Image key={index} source={image} style={imageStyle} />
+          <Image
+            key={index}
+            source={image}
+            style={imageStyle}
+            resizeMode="cover" // This will ensure images are cropped and maintain aspect ratio
+          />
         ))}
       </ScrollView>
 
@@ -97,20 +102,12 @@ const CardItem = ({
       {/* ACTIONS */}
       {hasActions && (
         <View style={styles.actionsCardItem}>
-          <TouchableOpacity style={styles.miniButton}>
-            <Icon name="star" color={STAR_ACTIONS} size={14} />
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.button}>
-            <Icon name="heart" color={LIKE_ACTIONS} size={25} />
-          </TouchableOpacity>
-
           <TouchableOpacity style={styles.button}>
             <Icon name="close" color={DISLIKE_ACTIONS} size={25} />
           </TouchableOpacity>
-
-          <TouchableOpacity style={styles.miniButton}>
-            <Icon name="flash" color={FLASH_ACTIONS} size={14} />
+          {/* Other content you may have in the middle, if any */}
+          <TouchableOpacity style={styles.button}>
+            <Icon name="heart" color={LIKE_ACTIONS} size={25} />
           </TouchableOpacity>
         </View>
       )}
