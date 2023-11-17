@@ -1,10 +1,21 @@
 import { DataT } from "../../types";
 
-import RICHARD_1 from "../images/01.jpg";
+import RICHARD_1 from "../images/01_0.jpg";
+import RICHARD_2 from "../images/01_1.jpg";
+import RICHARD_3 from "../images/01_2.jpg";
+import RICHARD_4 from "../images/01_3.gif";
 
-import IMAGE_02 from "../images/02.jpg";
-import IMAGE_03 from "../images/03.jpg";
-import IMAGE_04 from "../images/04.jpg";
+import RION_1 from "../images/02_0.jpg";
+import RION_2 from "../images/02_1.gif";
+import RION_3 from "../images/02_2.jpg";
+
+import LILAH_1 from "../images/03_0.jpg";
+import LILAH_2 from "../images/03_1.gif";
+import LILAH_3 from "../images/03_2.jpg";
+
+import BELLA_1 from "../images/04_0.jpg";
+import BELLA_2 from "../images/04_1.gif";
+
 import IMAGE_05 from "../images/05.jpg";
 import IMAGE_06 from "../images/06.jpg";
 import IMAGE_07 from "../images/07.jpg";
@@ -23,18 +34,19 @@ const data: DataT[] = [
     message:
       "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
     image: RICHARD_1,
-    images: [RICHARD_1],
+    images: [RICHARD_1, RICHARD_4, RICHARD_2, RICHARD_3],
   },
   {
     id: 2,
-    name: "Clementine Bauch",
-    match: "93",
+    name: "Lilah Segundo",
+    match: "76",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "indy artist and passion ukulele player. \n 'in the jungle' out now",
     isOnline: false,
-    message: "Someone like you. Someone who'll rattle the cages.",
-    image: IMAGE_02,
-    images: [RICHARD_1],
+    message:
+      "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
+    image: LILAH_1,
+    images: [LILAH_1, LILAH_2, LILAH_3],
   },
   {
     id: 3,
@@ -45,19 +57,19 @@ const data: DataT[] = [
     isOnline: false,
     message:
       "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
-    image: IMAGE_03,
-    images: [RICHARD_1],
+    image: RION_1,
+    images: [RION_1, RION_2, RION_3],
   },
   {
     id: 4,
     name: "John Lebsack",
-    match: "88",
+    match: "23",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Avid Gamer and Streamer. Love to play Valorant, League of Legends, and TFT!",
     isOnline: true,
     message: "Bats frighten me. It's time my enemies shared my dread.",
-    image: IMAGE_04,
-    images: [RICHARD_1],
+    image: BELLA_1,
+    images: [BELLA_1, BELLA_2],
   },
   {
     id: 5,
@@ -68,7 +80,7 @@ const data: DataT[] = [
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
-    images: [RICHARD_1],
+    images: [IMAGE_05],
   },
   {
     id: 6,

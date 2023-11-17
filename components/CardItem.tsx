@@ -51,8 +51,6 @@ const CardItem = ({
     height: 400, // Fixed height for ScrollView
   };
 
-  const [activeSlide, setActiveSlide] = useState(0);
-
   return (
     <View style={styles.containerCardItem}>
       {/* IMAGE SCROLLVIEW */}
