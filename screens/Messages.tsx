@@ -12,10 +12,7 @@ import DEMO from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
 
 const Messages = () => (
-  <ImageBackground
-    source={require("../assets/images/bg.png")}
-    style={styles.bg}
-  >
+  <View style={styles.bg}>
     <View style={styles.containerMessages}>
       <View style={styles.top}>
         <Text style={styles.title}>Messages</Text>
@@ -38,7 +35,7 @@ const Messages = () => (
         )}
       />
     </View>
-  </ImageBackground>
+  </View>
 );
 
 export default Messages;

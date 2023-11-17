@@ -31,8 +31,7 @@ const data: DataT[] = [
     match: "96",
     description:
       "16 Year Old Photographer. Full-time Traveller. Globe Trotter. Teaches kids Photography.",
-    message:
-      "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
+    message: "Hey, can you teach me how to film videos with my drone?",
     image: RICHARD_1,
     images: [RICHARD_1, RICHARD_4, RICHARD_2, RICHARD_3],
   },
@@ -44,7 +43,7 @@ const data: DataT[] = [
       "indy artist and passion ukulele player. \n 'in the jungle' out now",
     isOnline: false,
     message:
-      "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
+      "Thank you so much! I'm happy you liked it. Got another album in the works.",
     image: LILAH_1,
     images: [LILAH_1, LILAH_2, LILAH_3],
   },
@@ -55,8 +54,7 @@ const data: DataT[] = [
     description:
       "Passionate about elevating performance, leadership and consciousness to accelerate innovation and build a better world.",
     isOnline: false,
-    message:
-      "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
+    message: "You founded Flow Research Collective right?",
     image: RION_1,
     images: [RION_1, RION_2, RION_3],
   },
@@ -67,7 +65,7 @@ const data: DataT[] = [
     description:
       "Avid Gamer and Streamer. Love to play Valorant, League of Legends, and TFT!",
     isOnline: true,
-    message: "Bats frighten me. It's time my enemies shared my dread.",
+    message: "Yeah, we can totally play Valorant together!",
     image: BELLA_1,
     images: [BELLA_1, BELLA_2],
   },
@@ -75,8 +73,7 @@ const data: DataT[] = [
     id: 5,
     name: "James Dietrich",
     match: "76",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+    description: "Provides High School Students with Studying Advice",
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
@@ -84,36 +81,22 @@ const data: DataT[] = [
   },
   {
     id: 6,
-    name: "Patricia Schulist",
-    match: "95",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: true,
-    message:
-      "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
-    image: IMAGE_06,
-    images: [RICHARD_1],
-  },
-  {
-    id: 7,
     name: "Chelsey Weissnat",
     match: "67",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: true,
-    message:
-      "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
+    message: "gonna be in los angeles next month.",
     image: IMAGE_07,
-    images: [RICHARD_1],
+    images: [IMAGE_07],
   },
   {
-    id: 8,
-    name: "Nicky Runol",
+    id: 7,
+    name: "Jet Jadeja",
     match: "85",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    age: "27",
-    location: "Irvine, CA",
+    description: "Making videos about Programming",
+    age: "17",
+    location: "Santa Monica, CA",
     info1: 'Straight, Single, 5"10',
     info2: "Tea Totaller, Loves Photography & Travel",
     info3: "Beaches, Mountain, Cafe, Movies",
@@ -122,22 +105,10 @@ const data: DataT[] = [
     message:
       "And as for the television's so-called plan, Batman has no jurisdiction.",
     image: IMAGE_08,
-    images: [RICHARD_1],
+    images: [IMAGE_08],
   },
   {
-    id: 9,
-    name: "Glenna Reichert",
-    match: "74",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: true,
-    message:
-      "This is what happens when an unstoppable force meets an immovable object.",
-    image: IMAGE_09,
-    images: [RICHARD_1],
-  },
-  {
-    id: 10,
+    id: 8,
     name: "Kurtis DuBuque",
     match: "98",
     description:
@@ -146,7 +117,7 @@ const data: DataT[] = [
     message:
       "You want order in Gotham. Batman must take off his mask and turn himself in.",
     image: IMAGE_10,
-    images: [RICHARD_1],
+    images: [IMAGE_10],
   },
 ];
 

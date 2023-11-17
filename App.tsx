@@ -3,7 +3,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Matches, Messages, Profile } from "./screens";
-import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
+import {
+  PRIMARY_COLOR,
+  DARK_GRAY,
+  BLACK,
+  WHITE,
+  DARKER_GRAY,
+} from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 
 const Stack = createStackNavigator();
@@ -28,7 +34,7 @@ const App = () => (
                 paddingTop: 10,
               },
               style: {
-                backgroundColor: BLACK,
+                backgroundColor: DARKER_GRAY,
                 borderTopWidth: 0,
                 marginBottom: 0,
                 shadowOpacity: 0.05,
@@ -43,11 +49,7 @@ const App = () => (
               component={Home}
               options={{
                 tabBarIcon: ({ focused }) => (
-                  <TabBarIcon
-                    focused={focused}
-                    iconName="search"
-                    text="Explore"
-                  />
+                  <TabBarIcon focused={focused} iconName="search" />
                 ),
               }}
             />
@@ -57,11 +59,7 @@ const App = () => (
               component={Messages}
               options={{
                 tabBarIcon: ({ focused }) => (
-                  <TabBarIcon
-                    focused={focused}
-                    iconName="chatbubble"
-                    text="Chat"
-                  />
+                  <TabBarIcon focused={focused} iconName="chatbubble" />
                 ),
               }}
             />
@@ -71,11 +69,7 @@ const App = () => (
               component={Profile}
               options={{
                 tabBarIcon: ({ focused }) => (
-                  <TabBarIcon
-                    focused={focused}
-                    iconName="person"
-                    text="Profile"
-                  />
+                  <TabBarIcon focused={focused} iconName="person" />
                 ),
               }}
             />

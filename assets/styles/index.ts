@@ -33,6 +33,7 @@ export default StyleSheet.create({
     shadowRadius: 10,
     shadowColor: BLACK,
     shadowOffset: { height: 0, width: 0 },
+    paddingBottom: 17,
   },
   matchesCardItem: {
     marginTop: -35,
@@ -80,9 +81,9 @@ export default StyleSheet.create({
     expand: true,
   },
   button: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
+    width: 65,
+    height: 65,
+    borderRadius: 40,
     backgroundColor: BLACK,
     marginHorizontal: 35,
     alignItems: "center",
@@ -92,8 +93,8 @@ export default StyleSheet.create({
     shadowRadius: 20,
     shadowColor: DARK_GRAY,
     shadowOffset: { height: 10, width: 0 },
-    borderWidth: 2, // Add this line for border width
-    borderColor: "white", // Add this line for border color
+    borderWidth: 2,
+    borderColor: "white",
   },
   miniButton: {
     width: 40,
@@ -162,22 +163,27 @@ export default StyleSheet.create({
     marginRight: 20,
     marginVertical: 15,
   },
+  messageName: {
+    color: WHITE,
+    fontSize: 15,
+    paddingTop: 5,
+  },
   message: {
-    color: GRAY,
+    color: LIGHT_GRAY,
     fontSize: 12,
     paddingTop: 5,
   },
 
   // COMPONENT - PROFILE ITEM
   containerProfileItem: {
-    backgroundColor: WHITE,
+    backgroundColor: DARKER_GRAY,
     paddingHorizontal: 10,
     paddingBottom: 25,
     margin: 20,
-    borderRadius: 8,
+    borderRadius: 15,
     marginTop: -65,
     elevation: 1,
-    shadowOpacity: 0.05,
+    shadowOpacity: 1,
     shadowRadius: 10,
     shadowColor: BLACK,
     shadowOffset: { height: 0, width: 0 },
@@ -199,7 +205,8 @@ export default StyleSheet.create({
     paddingTop: 25,
     paddingBottom: 5,
     color: WHITE,
-    fontSize: 15,
+    fontSize: 25,
+    fontWeight: "bold",
     textAlign: "center",
   },
   descriptionProfileItem: {
@@ -238,7 +245,7 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  title: { paddingBottom: 10, fontSize: 22, color: DARK_GRAY },
+  title: { paddingBottom: 10, fontSize: 22, color: WHITE },
 
   // CONTAINER - HOME
   containerHome: {
@@ -296,6 +303,17 @@ export default StyleSheet.create({
     alignItems: "center",
     marginLeft: 10,
     height: 50,
+    borderRadius: 25,
+    backgroundColor: SECONDARY_COLOR,
+    paddingHorizontal: 20,
+  },
+  roundedLinkButton: {
+    justifyContent: "center",
+    flexDirection: "row",
+    alignItems: "center",
+    marginLeft: 10,
+    height: 50,
+    width: 120,
     borderRadius: 25,
     backgroundColor: SECONDARY_COLOR,
     paddingHorizontal: 20,

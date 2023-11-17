@@ -9,27 +9,24 @@ import {
 import { Icon, ProfileItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { WHITE } from "../assets/styles";
+import ProfilePicture from "../assets/images/JetJadeja.jpg";
+import { AntDesign, FontAwesome5, Entypo } from "@expo/vector-icons";
+
+export const YOUTUBE_COLOR = "#FF0000";
+export const TIKTOK_COLOR = "#000000";
+export const INSTAGRAM_COLOR = "#d62976";
+export const SPOTIFY_COLOR = "#1DB954";
+export const PINTEREST_COLOR = "#BD081C";
+export const TWITTER_COLOR = "#1DA1F2";
 
 const Profile = () => {
-  const {
-    age,
-    image,
-    info1,
-    info2,
-    info3,
-    info4,
-    location,
-    match,
-    name,
-  } = DEMO[7];
+  const { age, image, info1, info2, info3, info4, location, match, name } =
+    DEMO[6];
 
   return (
-    <ImageBackground
-      source={require("../assets/images/bg.png")}
-      style={styles.bg}
-    >
+    <View style={styles.bg}>
       <ScrollView style={styles.containerProfile}>
-        <ImageBackground source={image} style={styles.photo}>
+        <ImageBackground source={ProfilePicture} style={styles.photo}>
           <View style={styles.top}>
             <TouchableOpacity>
               <Icon
@@ -63,17 +60,77 @@ const Profile = () => {
         />
 
         <View style={styles.actionsProfile}>
-          <TouchableOpacity style={styles.circledButton}>
-            <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
+          <TouchableOpacity
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center",
+              marginLeft: 10,
+              height: 50,
+              width: 120,
+              borderRadius: 25,
+              backgroundColor: YOUTUBE_COLOR,
+              paddingHorizontal: 20,
+            }}
+          >
+            <View
+              style={{
+                marginRight: 3,
+              }}
+            >
+              <AntDesign name="youtube" size={20} color={WHITE} />
+            </View>
+            <Text style={styles.textButton}>YouTube</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.roundedButton}>
-            <Icon name="chatbubble" size={20} color={WHITE} />
-            <Text style={styles.textButton}>Start chatting</Text>
+          <TouchableOpacity
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center",
+              marginLeft: 10,
+              height: 50,
+              width: 120,
+              borderRadius: 25,
+              backgroundColor: INSTAGRAM_COLOR,
+              paddingHorizontal: 20,
+            }}
+          >
+            <View
+              style={{
+                marginRight: 3,
+              }}
+            >
+              <FontAwesome5 name="instagram" size={20} color={WHITE} />
+            </View>
+            <Text style={styles.textButton}>Instagram</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center",
+              marginLeft: 10,
+              height: 50,
+              width: 120,
+              borderRadius: 25,
+              backgroundColor: SPOTIFY_COLOR,
+              paddingHorizontal: 20,
+            }}
+          >
+            <View
+              style={{
+                marginRight: 3,
+              }}
+            >
+              <Entypo name="spotify" size={20} color={WHITE} />
+            </View>
+            <Text style={styles.textButton}>Spotify</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
-    </ImageBackground>
+    </View>
   );
 };
 
